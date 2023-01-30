@@ -15,7 +15,7 @@ module DB
       production_settings
     else
       dev_settings
-    end.default.connection
+    end.gateways[:default].connection
   end
 
   private

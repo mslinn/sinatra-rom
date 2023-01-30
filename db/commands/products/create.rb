@@ -1,6 +1,6 @@
-class CreateProduct < ROM::Commands::Create[:sql]
-  register_as :create
+class CreateProduct < ROM::SQL::Commands::Create[:sql]
   relation :products
+  register_as :create
 
   input ProductParams
   validator ProductValidator
